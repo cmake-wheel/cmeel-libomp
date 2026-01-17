@@ -12,6 +12,7 @@ ExternalProject_Add(
   ${NAME}
   URL "https://github.com/llvm/llvm-project/releases/download/llvmorg-${VERSION}/openmp-${VERSION}.src.${EXT}"
   URL_HASH "SHA256=${SHA256}"
+  CMAKE_ARGS "-DOPENMP_STANDALONE_BUILD=ON"
 )
 
 # dummy file for install target
