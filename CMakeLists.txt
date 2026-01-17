@@ -13,7 +13,7 @@ ExternalProject_Add(
   URL "https://github.com/llvm/llvm-project/releases/download/llvmorg-${VERSION}/llvm-project-${VERSION}.src.${EXT}"
   URL_HASH "SHA256=${SHA256}"
   SOURCE_SUBDIR "openmp"
-)
+  CMAKE_ARGS "-DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}")
 
 # dummy file for install target
 install(FILES "README.md" DESTINATION "share/cmeel-${NAME}/")
