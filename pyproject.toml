@@ -16,7 +16,6 @@ upstream = "https://openmp.llvm.org/"
 [tool.cmeel]
 has-sitelib = false
 run-tests = false
-source = "llvm-project/openmp"
 
 [tool.tomlsort]
 all = true
