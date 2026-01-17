@@ -12,7 +12,7 @@ on:
 
 env:
   CMEEL_LOG_LEVEL: DEBUG
-  DEPS:
+  DEPS: lit
   PROJECT: cmeel-libomp
 
 jobs:
